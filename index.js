@@ -7,6 +7,7 @@ const cors = require('cors');
 const dotenv = require('dotenv').config();
 
 // 1. Configuration here
+const PORT = process.env.PORT || 8080;
 const fetch = require('node-fetch');
 global.fetch = fetch;
 
@@ -30,3 +31,4 @@ app.listen(
     console.log(`Listening to port ${PORT}`);
   }
 );
+
