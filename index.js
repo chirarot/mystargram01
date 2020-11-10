@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 8080;
+
 const express = require('express');
 const indexRouter = require('./routes/index');
 const path = require('path');
@@ -7,10 +7,9 @@ const cors = require('cors');
 const dotenv = require('dotenv').config();
 
 // 1. Configuration here
-const PORT = process.env.PORT || 8080;
 const fetch = require('node-fetch');
 global.fetch = fetch;
-
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 //Middleware เพื่ออ่าน req.body
